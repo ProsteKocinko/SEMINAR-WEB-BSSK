@@ -1,0 +1,263 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #faf7f2;  
+            color: #2e241f;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        .hlavicka-spet {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1e3d42;    
+            color: #f2e9de;
+            padding: 14px 30px;
+            border-bottom: 4px solid #bfa88d;
+            margin-bottom: 20px;
+        }
+
+        .spet-sipka {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #f2e9de;
+            font-weight: 600;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            transition: all 0.2s ease;
+        }
+
+        .spet-sipka:hover {
+            color: #dbbf9e;
+            transform: translateX(-3px);
+        }
+
+        .sipka-znak {
+            font-size: 30px;
+            line-height: 1;
+        }
+
+        .hlavicka-nadpis {
+            font-size: 22px;
+            font-weight: 200;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #efdbc7;
+        }
+
+        .Nadpis {
+            height: 280px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgba(20, 40, 35, 0.75), rgba(45, 55, 50, 0.7)), url("images/BRATISLAVA_background.jpg");
+            color: #fef7ec;
+            font-size: 70px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+            background-size: cover;
+            background-position: 50% 60%;
+            border-bottom: 4px solid #9d8064;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            padding: 0 20px;
+        }
+
+        .obrazky {
+            display: flex;
+            height: 210px;
+            box-shadow: 0 10px 18px -6px rgba(55, 45, 35, 0.25);
+            border: none;
+            background-color: #ffffff;
+            transition: all 0.25s ease;
+            border-radius: 14px;
+            overflow: hidden;
+        }
+
+        .obrazky:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 25px -10px #3f3229;
+        }
+
+        .image-sekcia {
+            flex: 1.2;
+            background-size: cover;
+            background-position: center;
+            border-right: 3px solid #dac09f;
+            filter: sepia(0.15) brightness(1.02);
+            transition: filter 0.3s;
+        }
+
+        .obrazky:hover .image-sekcia {
+            filter: sepia(0) brightness(1.05);
+        }
+
+        .sekcia-galeria {
+            flex: 2;
+            padding: 22px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #ffffff;
+            color: #2a2a2a;
+        }
+
+        .sekcia-galeria h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+            color: #1e4a4f;           
+            border-bottom: 2px solid #e5cdb3;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        .sekcia-galeria h3 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 8px;
+            font-style: italic;
+            color: #896b4f;            
+        }
+
+        .sekcia-galeria p {
+            font-weight: 500;
+            color: #3f3a35;
+            font-size: 15px;
+            letter-spacing: 0.3px;
+        }
+
+        .container a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #1e4a4f;
+            border: none;
+            color: white;
+            padding: 8px 28px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 13px;
+            border-radius: 40px;
+            cursor: pointer;
+            margin-top: 14px;
+            text-align: center;
+            text-decoration: none;
+            align-self: flex-start;
+            transition: 0.2s, transform 0.15s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container a:hover {
+            background: #a5754f;
+            color: white;
+            transform: scale(1.02);
+            box-shadow: 0 8px 12px rgba(100, 70, 40, 0.2);
+        }
+
+        .SNG .image-sekcia {
+            background-image: url("images/SNG1.jpg");
+        }
+
+        .GMB .image-sekcia {
+            background-image: url("images/GMB2.jpg");
+        }
+
+        .nedbalka .image-sekcia {
+            background-image: url("images/NEDBALKA1.jpg");
+        }
+        .danubiana .image-sekcia {
+            background-image: url("images/danubiana2.jpg");
+        }
+        .umelka .image-sekcia {
+            background-image: url("images/umelka1.jpg");
+        }
+        .atelier .image-sekcia {
+            background-image: url("images/ATELIER1.jpg");
+        }
+        
+        .zoya .image-sekcia {
+            background-image: url("images/zoya1.jpg");
+        }
+
+        
+
+        .footer {
+            margin-top: 70px;
+            background: #1e3d42;
+            color: #efe2d2;
+            padding: 44px 20px 16px;
+            border-top: 6px solid #bfa88d;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-sekcia {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-sekcia h3 {
+            margin-bottom: 16px;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ffefdb;
+            border-bottom: 1px solid #a4917d;
+            padding-bottom: 6px;
+        }
+
+        .footer-sekcia p,
+        .footer-sekcia li {
+            font-size: 14px;
+            opacity: 0.9;
+            color: #f0e0d0;
+            margin-bottom: 6px;
+        }
+
+        .footer-sekcia ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .footer-sekcia li {
+            margin-bottom: 6px;
+        }
+
+        .footer-spodok {
+            text-align: center;
+            margin-top: 36px;
+            padding-top: 18px;
+            font-size: 13px;
+            border-top: 1px solid #6e7e7b;
+            color: #d0c5b8;
+        }
+    
+        

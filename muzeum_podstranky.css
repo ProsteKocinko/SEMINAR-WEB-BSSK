@@ -1,0 +1,232 @@
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background-color: #f4f7f6;
+    line-height: 1.5;
+    color: #1e2f32;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.obrazok-vrch {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: inset 0 -2px 8px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.banner-radnica { background-image: url('img/radnica.banner.jpg'); object-fit: fill; }
+.banner-veza { background-image: url('img/veza.avif'); object-fit: fill; }
+.banner-doprava { background-image: url('img/dopravne.jpg'); object-fit: fill; }
+.banner-kamen { background-image: url('img/kamen.webp'); object-fit: fill; }
+
+.hlavicka {
+    background-color: #1e3d42;
+    color: white;
+    padding: 18px 5%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.spat {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid rgba(255,255,255,0.7);
+    padding: 6px 18px;
+    border-radius: 40px;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+.spat:hover {
+    background-color: white;
+    color: #1e3d42;
+    border-color: white;
+    transform: scale(0.97);
+}
+
+.nadpis {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.3px;
+    background: linear-gradient(135deg, #fff 0%, #e0f0e8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+.obsah {
+    max-width: 1280px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+.riadok {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 45px;
+    align-items: stretch;
+}
+
+.box {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.02);
+    padding: 24px 22px;
+    flex: 1;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s;
+    border: 1px solid #e9edec;
+}
+
+.box:hover {
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.box h2 {
+    color: #1e3d42;
+    border-left: 5px solid #e74c3c;
+    padding-left: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.65rem;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+
+.box p {
+    margin-bottom: 12px;
+    font-size: 0.98rem;
+    color: #2c3e3b;
+}
+
+.box iframe {
+    width: 100%;
+    height: 220px;
+    border-radius: 16px;
+    border: none;
+    margin-top: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.slideshow {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 18px;
+    background: #ffffff;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.slideshow-track {
+    display: flex;
+    animation: slideCards 20s infinite ease-in-out;
+    will-change: transform;
+}
+
+.slideshow-cards {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.slideshow-cards img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.3s;
+    border-radius: 15px;
+}
+
+.slideshow-cards:hover img {
+    transform: scale(1.01);
+}
+
+.card-info {
+    padding: 10px 12px;
+    text-align: center;
+    background: white;
+    flex-shrink: 0;
+}
+
+.card-info h2 {
+    border-left: none;
+    padding-left: 0;
+    margin: 0 0 3px 0;
+    font-size: 1.3rem;
+    color: #1e3d42;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+.card-info p {
+    margin: 0;
+    color: #5a6e6a;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+@keyframes slideCards {
+    0%, 20% { transform: translateX(0); }
+    25%, 45% { transform: translateX(-100%); }
+    50%, 70% { transform: translateX(-200%); }
+    75%, 95% { transform: translateX(-300%); }
+    97%, 100% { transform: translateX(0); }
+}
+
+.cena {
+    background-color: #e74c3c;
+    color: white;
+    text-align: center;
+    padding: 14px 12px;
+    border-radius: 48px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 3px 8px rgba(231,76,60,0.2);
+}
+
+.box p b {
+    color: #1e3d42;
+}
+
+.footer {
+    background-color: #1e3d42;
+    color: #e0ece8;
+    text-align: center;
+    padding: 28px 20px;
+    margin-top: 48px;
+    font-size: 0.9rem;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+}
+
+.footer p {
+    margin: 6px 0;
+}
